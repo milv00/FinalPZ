@@ -1,0 +1,5 @@
+#E3DCD2  
+흰색
+#013328 
+초록색
+background: linear-gradient(-150deg, white, black) fixed;

@@ -1,0 +1,50 @@
+/* 마이페이지 hidden navi */
+#main-navigation-h {
+    text-align: center;
+    list-style-type: none;
+    display: none; top: 13%;
+    font-size: 13px;
+    width: 100%;
+    overflow: hidden; 
+    margin-bottom: 8px;
+} 
+.outer-menu-item-h {
+    float: left;
+    margin-left: 13px;
+}
+
+.outer-menu-item-h:hover ul {
+    display: block;
+    position: fixed;
+}
+.menu-title-h {
+    display: block;
+    width: 70px; height: 30px; line-height: 20px;
+    text-align: center;
+    padding: 5px 20px;
+}
+.inner-menu-h {
+    display: none;
+    top: 130px; right: 0px;
+    width : 100%;
+    background: rgba(0,0,0, 0.6);
+    box-shadow: 2px 2px 6px rgba(5,5,5,0.9);
+    z-index: 10; 
+    font-size: 15px;
+}
+.inner-menu-item-h > a {
+    display: block;
+    padding: 5px 10px;
+    color: #E3DCD2;
+}
+.inner-menu-item-h > a:hover {
+    color: blue;
+}
+a { text-decoration: none;}
+
+@media screen and (max-width : 1000px) {
+    #main-navigation-h{ 
+        display: block;
+    }
+
+}

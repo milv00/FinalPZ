@@ -1,0 +1,160 @@
+* {
+    margin: 0; padding: 0;
+    color:  black;
+    list-style-type: none;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+body{
+    background-color: white;
+}
+/* 마이페이지 header */
+.main-header { 
+    padding: 25px 50px 15px 48px;
+    height: 50px;
+    position:fixed;
+    width: 100%;
+    margin: 0 auto;
+    background-color: rgba(0, 0, 0, 0.03);
+}
+ul {list-style-type: none;}
+.info-menu {
+    margin-right: 70px;
+    height: 50%;
+    float: right;
+    position: relative;
+}
+/* made by MG 효과 */
+.hv-h{ transition: 0.2s;}
+.hv-h:hover{ 
+  transform: scale(1.2); color: hotpink;
+} 
+button {
+    width: 70px; height: 20px;
+    margin-left: 10px;  margin-top: 5px;
+    border: 0; 
+    background-color: white;
+    border-radius: 15px;
+    transition:all 0.9s, color 0.3; 
+}
+.bt-ani:hover{
+    box-shadow:200px 0 0 0 rgba(255,105,180,0.8) inset;
+}
+.main-title {
+    font-size: 30px;
+    float: left;
+}
+.main-madeby {
+    font-size: 15px; 
+    text-align: center;
+    margin-bottom: 10px; margin-left: 10px;
+    float: left;
+    font-style: italic;
+    cursor: pointer;
+}
+
+.hv-ani-h  {
+    display: inline-block;
+    padding: 15px 0 8px 0;
+    position: relative;
+    font-style: italic; 
+  }
+.hv-ani-h:after {    
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0; content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    background-color: hotpink;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+  }
+  .hv-ani-h:hover:after { width: 100%; left: 0;}
+
+@media screen and (min-width : 822px) {
+    .info-menu { 
+        overflow: hidden;
+    }
+    .info-menu li {
+        float: left;
+    }
+}
+@media screen and (orientation : portrait){
+    .info-menu {
+        overflow: visible;
+        float: right;
+        margin-right: 80px;
+    }
+    .main-madeby{ display: none; }
+}
+/* 마이페이지 body */
+div.mypage-body {
+    padding-top: 100px;
+}
+.container {
+    width: 900px;
+    overflow: hidden;
+    margin: 0 auto;
+    margin-bottom: 8px;
+}
+.middle {
+    background-color: purple;
+    width: 800px; height: 200px;
+}
+#top {
+    /* div 중앙정렬 */
+    display: flex;
+    align-items: center; flex-direction: row; 
+    justify-content: center;     
+    flex-wrap: wrap; /*모바일을 위해*/
+    margin-bottom: 8px;
+}
+.profile {
+    background-color: green;
+    width: 250px; height: 250px; border-radius: 100%;
+}
+.profile-img {
+    float: left;
+    width: 250px; height: 250px; border-radius: 100%;
+}
+.profile-box {
+    float: left; margin-left: 10px;
+    background-color: rgba(0, 0, 0, 0.05);
+    width: 640px; height: 250px; border-radius: 20px;
+}
+.profile-content {
+    text-align: left;
+    float: center;
+    margin: 14% 0 0 28% ;
+}
+.profile-box { text-align: center;}
+.profile-content li { 
+    display: inline-block;
+    margin-bottom: 10px; 
+}
+.li-center {
+    margin: 0 auto;
+}
+.left { 
+    background-color: rgba(0, 0, 0, 0.3); 
+    float: left; 
+    width: 650px; height: 650px;
+    border-radius: 10px;
+}    
+.right {
+    background-color: rgba(0, 0, 0, 0.6); 
+    float: right; 
+    width: 242px; height: 650px;
+    border-radius: 10px;
+}
+@media screen and (max-width : 900px) {
+    .container { float: none;width: auto; margin: 0 auto; margin-top: 10px;}
+    .left{ float: none; width: auto; }
+    .right { float: none; width: auto; }
+    .middle { float: none; width: auto; height: 200px; }
+}
+
+
+
+
+    

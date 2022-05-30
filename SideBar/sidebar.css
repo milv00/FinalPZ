@@ -1,0 +1,22 @@
+.section-content-dot {
+    font-size: 10px;
+    top: 47%;
+    right: 25px;
+    list-style-type: none;
+    float: right;
+}
+.section-content-dot li {
+    padding: 6px;
+}
+.section-content-dot  li a {
+    color: grey
+}
+.section-content-dot li :hover {
+    color: #E3DCD2 ;
+    font-size: 12px;
+}
+@media screen and (max-width:821px){
+   .section-content-dot {
+       display: none;
+   }
+}

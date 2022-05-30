@@ -1,0 +1,119 @@
+*{margin: 0; padding: 0;}
+h3 { color: white;}
+section {width: 100vw; height: 100vh;}
+.start-pg{
+    color: #fff;
+    background: linear-gradient(-45deg,rgb(0,10,0),grey, lightgrey, white);
+    background-repeat: no-repeat;
+    background-size: 800% 800%;
+    position: relative;
+    animation: backgroundChange 15s ease-in-out infinite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+@keyframes backgroundChange {
+    0% { background-position: 0 50%;}
+    50% { background-position: 100% 50%;}   
+    100% { background-position: 0 50%;}
+}
+img{
+    margin-top: 200px;
+    width: 100%;
+}
+input{
+    line-height: 30px;
+    font-size: 12px;
+    padding-left: 10px; padding-right: 10px;
+    border: 0; border-radius: 15px;
+    outline: none;
+}
+button {
+    border-radius: 15px; border: 0;
+    margin-bottom: 10px;
+    line-height: 25px;
+    background-color: darkgrey; color: black;
+    width: 143px;
+}
+.home-bt {
+    float: right;
+}
+@media screen and (min-width:1081px){
+    .container1{ 
+        width: 300px; height: 300px;
+        border: 1px solid ivory;
+        border-radius: 50px;
+        position: absolute;
+        left: 35%; top: 50%;
+        margin-left: -105px; margin-top: -150px;
+        float: left;
+        background-color: rgba(0, 0, 0, 0.5);
+        
+    }
+    #login {color: black;}
+
+    .container1 h3 {
+        margin-top: 130px;
+        text-align: center;
+        font-size: 30px;
+    }
+    .container2 {
+        width: 300px; height: 300px;
+        position: absolute;
+        right: 35%; top: 50%;
+        margin-right: -105px; margin-top: -150px;
+        float: left;
+    }
+    .info{
+        margin: 0 auto;
+        text-align: center;
+        margin-top: 40px;
+    }
+}
+@media screen and (max-width:1080px){
+    .container1{ display: none; }
+    .container2{ 
+        width: 300px; height: 300px;
+        border: 1px solid ivory;
+        border-radius: 50px;
+        position: absolute;
+        left: 50%; top: 50%;
+        margin-left: -150px; margin-top: -150px;
+        background-color: rgba(0, 0, 0, 0.5);
+
+    }
+    #login {color: white;}
+    .info{
+        text-align: center;
+        height: 100px;
+        margin-top: 40px;
+    }
+}
+@media screen and  (orientation: portrait) {
+    .container1{ display: none; }
+    .container2{ 
+        width: 300px; height: 300px;
+        border: 1px solid ivory;
+        border-radius: 50px;
+        position: absolute;
+        left: 50%; top: 50%;
+        margin-left: -150px; margin-top: -150px;
+        background-color: rgba(0, 0, 0, 0.5);
+
+    }
+    .info{
+        text-align: center; height: 100px;
+        margin-top: 40px;
+    }
+}
+.embed-container { 
+    position: relative; padding-bottom: 56.25%; 
+    height: 0; overflow: hidden; max-width: 100%; 
+    z-index: -1;    
+} 
+.embed-container iframe, 
+.embed-container object, .embed-container embed { 
+    position: absolute; top: 0; left: 0; 
+    width: 100%; height: 100%; 
+}

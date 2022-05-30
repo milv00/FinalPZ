@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Mg's HomePage</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0">
+	<!-- dots  jquery -->
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E=" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="Index/main.css">
+	<link rel="stylesheet" href="Header/header.css">
+	<link rel="stylesheet" href="Content/content.css">
+	<script src="Index/index.js"></script>
+</head>
+
+<header class="main-header">
+	<h1 class="main-title"><a href="index.html">MG's </a><a href="#s0">HomePage</a></h1>
+	<h2 class="main-madeby hv-h">made by MG </h2> 
+	<div class="header-navi">
+		<ul>
+			<li><a href="#s0"><span class="hv-ani-h">HOME</span></a></li>
+			<li><a href="#s1"><span class="hv-ani-h">NAVI</span></a></li>
+			<li><a href="#s2" class="hide"><span class="hv-ani-h">YouTube</span></a></li>
+			<li><a href="#s3" class="hide"><span class="hv-ani-h">MyInFo</span></a></li>
+
+		</ul>	
+	</div>
+
+	<div class="info-menu">
+		<ul class="btlo">
+			<li><button class="bt-ani" onclick="location.href = 'mypage.html'">MyPage</button></li>
+			<li><button class="bt-ani" onclick="location.href = 'signup.html'">Logout</button ></li>
+		</ul>
+	</div>
+</header>
+
+<body>
+	<div class="main-container">
+		<div class="navi">
+			<ul class="dots">
+				<li><a href="#s0" class="active-color"></a></li>
+				<li><a href="#s1" id="c"onclick="bg();"></a></li>
+				<li><a href="#s2" id="c"onclick="bg();"></a></li>
+				<li><a href="#s3" id="c"onclick="bg();"></a></li>
+				<!-- <li><a href="#s4" id="c"onclick="bg();"></a></li> -->
+			</ul>
+	
+			
+		</div>
+
+
+		<section id="s0">
+			<h1 class="title"> . </h1>
+			<div id="welcomepg" class="welcome-ani"> <h1>Hello MG</h1></div>
+			<!-- <h1 class="title"> . </h1>	 -->
+			<!-- <div class='embed-container'><iframe src='https://www.youtube.com/embed//HfIaPWmbVVw?rel=0&amp;autoplay=1&mute=1&amp;loop=1;' frameborder='0' allowfullscreen></iframe></div> -->
+
+		</section>
+		<section id="s1">
+			<h1 class="title"> . </h1>
+			<div id="cont-navi">
+				<br><a href="#s0"><strong class="hv-ani">Wanna go Home ?</strong></a><br>
+				<br><a href="#s2"><strong class="hv-ani">SubScribe Now ! </strong></a><br>
+				<br><a href="#s3"><strong class="hv-ani">Who made it ?!</strong></a>
+			</div>
+
+	
+		</section>
+		<section id="s2">
+			<!-- 모바일에서 비율 맞추기 위한 mobile-box -->
+			<div id="mobile-box">...</div> 
+				<div class='embed-container pc-video'>
+					<iframe src='https://www.youtube.com/embed//p_w1RlTE5z0?rel=0&amp;autoplay=1&mute=1&amp;loop=1;' frameborder='0' allowfullscreen></iframe>	
+				</div>
+				<div class="mobile-link hv-l"> <a href="https://youtu.be/p_w1RlTE5z0">Upper Video Link</a><br><a   href="https://www.youtube.com/channel/UC6DYAkA13noO7uegI1Ay9aw">YouTube Link Subscribe Me</a></div>
+				<!-- 모바일에서 영상 한개 더 보여줌 -->
+				<div class='embed-container mobile-video'>
+					<iframe src='https://www.youtube.com/embed//yOHWk0-Dntg?rel=0&amp;autoplay=1&mute=1&amp;loop=1;' frameborder='0' allowfullscreen></iframe>	
+				</div>
+				<div class="mobile-link hv-l"> <a href="https://youtu.be/yOHWk0-Dntg">Upper Video Link</a><br><a   href="https://www.youtube.com/channel/UC6DYAkA13noO7uegI1Ay9aw">YouTube Link Subscribe Me</a></div>
+		</section>
+		<section id="s3">	
+			<h1 class="title"> . </h1>
+			<div class="profile">
+				<div><img class="profile-img" src="beauty_1641600723513.JPEG" ></div>
+				<div class="profile-box">
+					<ul class="profile-content">
+						<li>School : KGU</li>
+						<li>Email : brianmg@naver.com</li>
+						<li>Instagram : p__milv</li>
+					</ul>
+				</div>
+			</div>
+		</section>
+	</div>
+</body>
+<footer>
+	<!-- 현재 시간 -->
+	<h1 id="clock" ></h1>
+</footer>
+</html>
