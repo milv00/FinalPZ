@@ -21,3 +21,6 @@ https://milv00.github.io/FinalPZ/
 
 <myweb으로 홈페이지>
 http://csweb.kyonggi.ac.kr/users/201912064/%EC%B5%9C%EC%A2%85pz/index.html
+
+
+html코드와 이미지를 제외한 css나 js파일들은 Header, Footer, MyPage 등 폴더 안에 들어있습니다.
